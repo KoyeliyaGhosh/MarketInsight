@@ -3,7 +3,10 @@ import { C1Chat, ThemeProvider } from '@thesysai/genui-sdk'
 import '@crayonai/react-ui/styles/index.css'
 import { useState, useCallback, useRef, useEffect } from 'react'
 
-// Recommendation data
+// API endpoint for backend connection
+const API_URL = import.meta.env.VITE_API_URL || 'https://marketinsight-skgl.onrender.com/api/chat'
+
+// Recommendation data with enhanced icons
 const RECOMMENDATIONS = [
   {
     icon: '📊',
@@ -269,7 +272,7 @@ function App() {
     <div className="app-container" ref={chatContainerRef}>
       <ThemeProvider mode="dark">
         <C1Chat
-          apiUrl="https://marketinsight-skgl.onrender.com/api/chat"
+          apiUrl={API_URL}
           agentName="Market Insight"
           logoUrl="/icon.png"
           formFactor="full-page"
