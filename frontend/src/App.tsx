@@ -267,6 +267,15 @@ function App() {
 
   return (
     <div className="app-container" ref={chatContainerRef}>
+      {/* Animated background particles */}
+      <div className="floating-particles">
+        <div className="particle particle-1"></div>
+        <div className="particle particle-2"></div>
+        <div className="particle particle-3"></div>
+        <div className="particle particle-4"></div>
+        <div className="particle particle-5"></div>
+      </div>
+      
       <ThemeProvider mode="dark">
         <C1Chat
           apiUrl="https://marketinsight-skgl.onrender.com/api/chat"
