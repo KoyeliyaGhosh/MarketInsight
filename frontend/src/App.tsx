@@ -278,7 +278,7 @@ function App() {
       
       <ThemeProvider mode="dark">
         <C1Chat
-          apiUrl="https://marketinsight-skgl.onrender.com/api/chat"
+          apiUrl="/api/chat"
           agentName="Market Insight"
           logoUrl="/icon.png"
           formFactor="full-page"
